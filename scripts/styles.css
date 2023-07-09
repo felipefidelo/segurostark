@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: url(https://source.unsplash.com/random/800x600?dark) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 0 10px white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.description:hover {
+  color: #4CAF50;
+}
+
+.links {
+  height: auto;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.link {
+  margin-bottom: 10px;
+}
+
+.link a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.link a:hover {
+  background-color: #45a049;
+}
+
+.temp-message {
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  display: none;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+}
+
+.close-animation {
+  max-width: 300px;
+  margin: 0 auto;
+  display: none;
+}
+
+.close-animation img {
+  max-width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+}
+
+
